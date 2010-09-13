@@ -3,12 +3,12 @@
 <head>
 <title>Test</title>
 <link rel='stylesheet' type='text/css' href="test.css" />
-<script type="text/javascript" src="test.js"></script>
 <script type="text/javascript" src="sha1.js"></script>
 <script type="text/javascript">
 function sendHash(form)
   {
 	var hashVal = sha1Hash(form.login.value + form.password.value);
+	//this.location.href = "checklogin.php?ID=" + hashVal;
   	window.open("checklogin.php?ID=" + hashVal);
   }
 </script>
@@ -18,7 +18,7 @@ function sendHash(form)
 
 <div id="header">Welcome!</div>
 <div id="main">
-<form name="testForm" method="GET">
+<form name="testForm" method="POST">
 <!--<form action="checklogin.php" method="POST">-->
 <p class="formfont">Login:</p>
 <input type="text" name="login" size="30" />

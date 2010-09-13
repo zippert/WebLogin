@@ -26,6 +26,12 @@ while(($row = mysql_fetch_array($result)) && !$found){
 }
 echo "<hr />";
 
+if($found){
+header("Location: index.php?login=" . $hash); 
+} else {
+header("Location: start.html");
+}
+
 
 sql_close($con);
 ?>
