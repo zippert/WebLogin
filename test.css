@@ -1,0 +1,47 @@
+body {
+	background-color: lightblue;
+	font-family: Calibri;
+}
+
+form {
+	border: 1px dashed dodgerblue;
+	padding: 1em 1em 1em 1em;
+}
+
+.formfont {
+	font-weight: bold;
+	margin: inherit;
+}
+
+/* Style used for radio button groups */
+div.rbgroup {
+	border: 1px inset dodgerblue;
+	padding: 10px 10px 10px 10px;
+}
+
+div#header {
+	border: 2px solid dodgerblue;
+	margin-top: 50px;
+	padding-top: 10px;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 5px;
+	font-size: x-large;
+	text-align: center;
+	color: lightgray;
+	clear: both;
+	background: #369;
+	position: relative;
+}
+
+div#main {
+	border: 2px solid dodgerblue;
+	height: 25em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	font-size: 12px;
+	background: lightgray;
+	position: relative;
+}

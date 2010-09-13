@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv-SE" lang="sv-SE">
+<head>
+<title>Test</title>
+<link rel='stylesheet' type='text/css' href="test.css" />
+<script type="text/javascript" src="test.js"></script>
+<script type="text/javascript" src="sha1.js"></script>
+<script type="text/javascript">
+function sendHash(form)
+  {
+	var hashVal = sha1Hash(form.login.value + form.password.value);
+  	window.open("checklogin.php?ID=" + hashVal);
+  }
+</script>
+</head>
+
+<!--<body id="home" onload="startTimer()">-->
+
+<div id="header">Welcome!</div>
+<div id="main">
+<form name="testForm" method="GET">
+<!--<form action="checklogin.php" method="POST">-->
+<p class="formfont">Login:</p>
+<input type="text" name="login" size="30" />
+<br />
+<br />
+<p class="formfont">Password:</p>
+<input type="password" name="password" size="30" />
+<br />
+<br />
+<input type="submit" value="Log in" class="formfont" onclick="sendHash(this.form)"/></form>
+</div>
+
+</body>
+</html>
