@@ -17,5 +17,7 @@ if (!mysql_query($sql,$con))
   }
 echo "1 record added";
 
-mysql_close($con)
+mysql_close($con);
+$hash = $_REQUEST[hash];
+header("Location: checklogin.php?hash=" . $hash . "&redirect=index");
 ?>

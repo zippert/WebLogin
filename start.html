@@ -9,7 +9,9 @@ function sendHash(form)
   {
 	var hashVal = sha1Hash(form.login.value + form.password.value);
 	//this.location.href = "checklogin.php?ID=" + hashVal;
-  	window.open("checklogin.php?ID=" + hashVal);
+	
+	//document.location.replace("checklogin.php?ID=" + hashVal);
+  	window.open("checklogin.php?hash=" + hashVal + "&redirect=index");
   }
 </script>
 </head>
